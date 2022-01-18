@@ -5,21 +5,21 @@
 class Kl < Formula
   desc ""
   homepage "https://github.com/klyall/kl-cli"
-  version "0.2.2"
+  version "0.3.2"
   license "Apache"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/klyall/kl-cli/releases/download/v0.2.2/kl_0.2.2_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "d5f15d8d83997e0739b7a52806fc8131361f20d6e41452a3675b9ffae220122e"
+      url "https://github.com/klyall/kl-cli/releases/download/v0.3.2/kl_0.3.2_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "9c2463b7c75945a43c38a8e014629a1c3a6cc03d02d0fd5b04d0bf4a2f8bf31b"
 
       def install
         bin.install "kl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/klyall/kl-cli/releases/download/v0.2.2/kl_0.2.2_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "c2705ff6ac4563ba41614dcd093d0c920228164fb2dcd928342910291ef9acd0"
+      url "https://github.com/klyall/kl-cli/releases/download/v0.3.2/kl_0.3.2_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "23d8c8c7b16030766dea8e6eed16ef565872ccc5d8a0edb554954b84b03cc711"
 
       def install
         bin.install "kl"
@@ -29,16 +29,16 @@ class Kl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klyall/kl-cli/releases/download/v0.2.2/kl_0.2.2_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "b5c22fc2d917783e825236c51632aab326747193c4980f51a6ac6a78d7e61715"
+      url "https://github.com/klyall/kl-cli/releases/download/v0.3.2/kl_0.3.2_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "7b5e389de33f29e366a8eac4acef03d9ccb9af6f0de409cf58fc95cc17fa61d7"
 
       def install
         bin.install "kl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/klyall/kl-cli/releases/download/v0.2.2/kl_0.2.2_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "8823f01ffe0646afb481acbbe654579fe8fa97e2b91cc17f2153d45856210af7"
+      url "https://github.com/klyall/kl-cli/releases/download/v0.3.2/kl_0.3.2_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "26e47a3befe65864ccf1a218b7ddd7b5c7bb2020f28c8782204eb676a67122a1"
 
       def install
         bin.install "kl"
